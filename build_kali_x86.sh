@@ -1,3 +1,4 @@
+#!/bin/bash
 apt-get update -y
 apt install -y curl git live-build cdebootstrap
 git clone git://git.kali.org/live-build-config.git

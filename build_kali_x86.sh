@@ -13,5 +13,6 @@ gqrx-sdr
 golang
 isc-dhcp-server
 php7.2
+php7.2-cgi
 EOF
 ./build.sh --arch i386 --variant xfce --verbose

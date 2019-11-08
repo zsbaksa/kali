@@ -1,0 +1,27 @@
+https://www.stiw.org/msf-pi.html
+
+$ sudo apt-get remove ruby1.9.1 libruby1.9.1
+$ dpkg -l | grep ruby
+$ sudo apt-get purge ruby1.9.1 ruby1.8
+--
+The following may work instead of removing ruby.
+$ sudo apt-get install rbenv
+$ rbenv rehash
+--
+$ apt-get install git ruby rubygems ruby-pg postgresql-common libpq-dev libpcap0.8 bundler ruby-pcaprub libpcap0.8 libpcap0.8-dev libsqlite3-dev 
+$ sudo gem install bundler
+$ cd $HOME; git clone git://github.com/rapid7/metasploit-framework
+$ cd metasploit-framework; ./msfupdate
+$ bundle install
+...
+Bundle complete! 16 Gemfile dependencies, 86 gems now installed.
+...
+$ ./msfconsole 
+http://metasploit.pro
+
+ =[ metasploit v4.11.4-dev-c1b6de90 ]
++ -- --=[ 1494 exploits - 861 auxiliary - 251 post ]
++ -- --=[ 432 payloads - 37 encoders - 8 nops ]
++ -- --=[ Free Metasploit Pro trial: http://r-7.co/trymsp ]
+
+msf > 

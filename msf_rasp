@@ -10,8 +10,11 @@ $ rbenv rehash
 --
 $ apt-get install git ruby rubygems ruby-pg postgresql-common libpq-dev libpcap0.8 bundler ruby-pcaprub libpcap0.8 libpcap0.8-dev libsqlite3-dev 
 $ sudo gem install bundler
+$ bundle install
+
 $ cd $HOME; git clone git://github.com/rapid7/metasploit-framework
 $ cd metasploit-framework; ./msfupdate
+
 $ bundle install
 ...
 Bundle complete! 16 Gemfile dependencies, 86 gems now installed.
@@ -25,3 +28,77 @@ http://metasploit.pro
 + -- --=[ Free Metasploit Pro trial: http://r-7.co/trymsp ]
 
 msf > 
+
+
+https://null-byte.wonderhowto.com/how-to/raspberry-pi-metasploit-0167798/
+https://null-byte.wonderhowto.com/how-to/raspberry-pi-metasploit-0167798/
+https://null-byte.wonderhowto.com/how-to/raspberry-pi-metasploit-0167798/
+https://null-byte.wonderhowto.com/how-to/raspberry-pi-metasploit-0167798/
+
+
+
+
+
+
+
+Installation
+I have looked around a bit for a guide on how to install Metasploit itself and I did find a article OTW did two years ago, but I noticed that there's a different method that I have seen in google search. The guide that I used in my opinion is a much better method (sorry OTW). You can either do my method which I will show down below or you can do OTW's method, either way the result is a functional Metasploit framework. With that being said this is one of several ways to install the framework.
+
+To install you would need to type in a terminal these commands:
+
+sudo su
+
+Obviously you would first gain super user access, but you don't have to and just put 'sudo' in front of the rest of commands.
+
+apt-get -y install build-essential zlib1g zlib1g-dev libxml2 libxml2-dev libxslt-dev locate libreadline6-dev libcurl4-openssl-dev git-core libssl-dev libyaml-dev openssl autoconf libtool ncurses-dev bison curl wget postgresql postgresql-contrib libpq-dev libapr1 libaprutil1 libsvn1 libpcap-dev
+
+apt-get install git-core postgresql curl ruby1.9.3 nmap gem
+gem install wirble sqlite3 bundler
+
+These commands install the needed packages and gems that are essential for the framework.
+
+cd /opt
+
+You need to be in the opt folder, why? That's a answer for another day.
+
+git clone https://github.com/rapid7/metasploit-framework.git
+
+now instead of signing up to get the application on the rapid7 website, you can clone the application from github .
+
+cd metasploit-framework
+bundle install
+
+Now the first command goes to the metasploit-framework directory, but you can't run it yet because you need to install the right bundle (hence the second command).
+
+./msfconsole
+
+Once the bundle is installed, run ./msfconsole to start your now operable Metasploit application. You can move this to your bin so that you only have to type 'msfconsole' but I'm not gonna explain that since there's another article that explains it better than I can.
+
+Conclusion
+I should note that there are many different applications out there for exploiting, just to name a few:
+
+Canvas
+Exploit Pack
+PwnPi
+There are many tools out there, just takes a bit of looking. Some of you might be wondering how this relates to Raspberry Pi, well I did this installation on my own Pi. That's how this relates to Pi and I though it was necessary to post how I did install Metasploit on my Pi. I would love comments down below and please give me some loving, but alas hack on my fellow hackers. :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+apt-get -y install build-essential zlib1g zlib1g-dev libxml2 libxml2-dev libxslt-dev locate libreadline6-dev libcurl4-openssl-dev git-core libssl-dev libyaml-dev openssl autoconf libtool ncurses-dev bison curl wget postgresql postgresql-contrib libpq-dev libapr1 libaprutil1 libsvn1 libpcap-dev
+
+apt-get install git-core postgresql curl ruby1.9.3 nmap gem
+gem install wirble sqlite3 bundler

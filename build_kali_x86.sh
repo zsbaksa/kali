@@ -16,3 +16,6 @@ php7.2
 php7.2-cgi
 EOF
 ./build.sh --arch i386 --variant xfce --verbose
+
+
+https://kalilinuxtutorials.com/wifite-wireless-attack-tool/
